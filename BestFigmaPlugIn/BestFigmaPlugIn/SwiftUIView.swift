@@ -24,14 +24,21 @@ struct ContentView: View {
             Image("ic-oval")
                 .offset(y: UIScreen.main.bounds.height * 0.18)
             
-            Image("ic-continue")
-                .offset(y: UIScreen.main.bounds.height * 0.27)
+            Button(action: {
+                // Add action for "Continue" button
+            }) {
+                Image("ic-continue")
+                    
+            }
+            .offset(y: UIScreen.main.bounds.height * 0.27)
             
-            Image("ic-login")
-                .offset(y: UIScreen.main.bounds.height * 0.36)
-            
-            
-        
+            Button(action: {
+                // Add action for "Login" button
+            }) {
+                Image("ic-login")
+                  
+            }
+            .offset(y: UIScreen.main.bounds.height * 0.36)
         }
         .foregroundColor(.white)
     }
